@@ -8,14 +8,14 @@ public class Online_lib {
     int availCount=10;
     public void addBooks(){
         System.out.print("Please enter the name of the book you want to add: ");
-        String bname = sc.nextLine();
+        String bname = sc.next();
         avail[availCount]=bname;
         availCount+=1;
         System.out.println("The new book has been added to the library successfully and can be downloaded.");
     }
     public void issuedBooks(){
         System.out.print("Please enter the name of the book to be issued: ");
-        String bname= sc.nextLine();
+        String bname= sc.next();
         boolean check=false;
         for(int i=0;i<availCount;i++)
         {
@@ -36,7 +36,7 @@ public class Online_lib {
     }
     public void returnBooks(){
         System.out.print("Please enter the name of the book you want to return: ");
-        String rname = sc.nextLine();
+        String rname = sc.next();
         System.out.println("Thank you for returning the book");
         issuedCount-=1;
         availCount+=1;
