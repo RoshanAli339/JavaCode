@@ -67,10 +67,10 @@ public class Online_lib {
             }
         }
         System.out.print("Do you want to do any other process(Y/N): ");
-        char guess = sc.next().charAt(0);
-        if(guess=='Y')
+        String guess  = sc.next();
+        if(guess.equalsIgnoreCase("Y"))
             printing();
-        else if(guess=='N')
+        else if(guess.equalsIgnoreCase("N"))
             System.out.println("\t\t\t\t\tThank You for using our Online Library. ;) ");
     }
     public static void main(String[] args) {
