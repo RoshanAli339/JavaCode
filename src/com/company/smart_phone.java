@@ -55,6 +55,10 @@ public class smart_phone {
         vivo.pickCall(901478578);
         vivo.recordin4k();//this will represent the default class automatically without being implemented in MySmartPhone
         // vivo.greet(); this is an error because private methods cannot be called....
-
+        camera cam1 = new MySmartPhone();
+        //cam1.connecttonetwork("Roshan"); cannot be used because cam1 is an object of camera in smartphone
+        // so we cannot use any other methods except for the one's in camera
+        cam1.recordVideo();
+        cam1.recordin4k();
     }
 }
