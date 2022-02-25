@@ -1,7 +1,6 @@
     import java.util.Scanner;
 
     public class ABC_bank {
-        static double bank_pos;
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             ABC_bank ob = new ABC_bank();
@@ -12,9 +11,9 @@
 
         static void display(Customer c[])
         {
-            bank_pos= 0.0;
+            double bank_pos= 0.0;
 
-            for (int i = 0; i < 10; ++i)
+            for (int i = 0; i < 5; ++i)
                 bank_pos += c[i].balance;
 
             System.out.println("The ABC bank posses Rs."+bank_pos+" currently.");
